@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Londrina Solid", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+html{
+    height: 100vh;
+}
+/*---------COMEÇO HEADER----------*/
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header{
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    padding: 80px 4%;
+    transition: 1s;
+    z-index: 5;
+}
+
+header.rolagem{
+    background-color: rgb(0, 0, 0);
+    padding: 10px 4%;
+
+}
+
+header.rolagem a{
+    color: #FD6158;
+
+}
+
+header ul{
+    list-style-type: none;
+
+}
+header ul li{
+    display: inline-block;
+    margin: 0 50px ;
+    position: relative;
+}
+header ul li a{
+    color:#FD6158;
+    text-decoration: none;
+
+}
+a{
+    text-decoration: none;
+}
+
+ul li::after{
+    content:" ";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+ul li:hover::after{
+    width: 100%;
+}
+  
+.re{
+    font-size: 50px;
+}
+
+.re::after{
+    top: 55px;
+}
+
+
+
+/*                       -------               */
+
+.reciclagem {
+    background: url("../imagens/pg4img7.jpg") 50% / cover no-repeat;
+    padding: 403px 0.5px 374.4px 0;
+    height: 100vh;
+    background-attachment: fixed;
+  }
+  .reciclagem .reciclagem-1 {
+    font-family: 'Londrina Solid';
+    font-size: 128px;
+    color: #FD6158;
+    text-align: center;
+  }
+
+  /*   ---  */
+
+
+  .dividir-pg2{
+    background-color: #FD6158;
+    width: 100%;
+    height: 2%;
+    position: absolute;
+  }
+
+
+img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin-top: 3%;
+}
+
+/*         ---------          */
+
+.parte-1 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("../imagens/pg4img4.png") 50% / cover no-repeat;
+    display: flex;
+    padding: 260px 167px 307px 105px;
+    box-sizing: border-box;
+    position: relative;
+    height: 100vh;
+  }
+
+  .parte-1 .text {
+    align-items: center;
+    font-family: 'Londrina Solid';
+    font-size: 40px;
+    color: #ffffff;
+    padding: 10px;
+    position: relative;
+    z-index: 3;
+    left: 3%;
+ 
+    
+  }
+
+ .shape{
+    background-color: #248178;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    border-radius: 42px;
+    right: 20%;
+
+}
+
+span{
+    font-size: 100px;
+    padding-left: 10%;
+
+}
+/* botao conhecer */
+
+.conhecer{
+    background-color: #FD6158;
+    width: 100%;
+    height: 3%;
+    position: absolute;
+
+}
+
+.moldura{
+    display: flex;
+    background-color: #FD6158;
+    position: absolute;
+    border-radius: 62px;
+    width: 15%;
+    height: 10%;
+    right: 45%;
+    top: 225%;
+    z-index: 1;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.textobotao{
+    display: flex;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    right: 47%;
+    top: 227%;
+
+    z-index: 2;
+
+}
+
+.bt{
+    color: white;
+}
+
+/*           -------------------       */
+
+.img2{
+    display: flex;
+    margin-right: 100px;
+}
+
+/*             -----------                */
+
+.parte-2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("../imagens/pg4img5.png") 50% / cover no-repeat;
+    display: flex;
+    padding: 260px 167px 307px 105px;
+    box-sizing: border-box;
+    position: relative;
+    height: 100vh;
+  }
+
+  .parte-2 .text2 {
+    align-items: center;
+    font-family: 'Londrina Solid';
+    font-size: 40px;
+    color: #ffffff;
+    padding: 10px;
+    position: relative;
+    z-index: 3;
+    left: 2%;
+ 
+    
+  }
+
+ .shape2{
+    background-color: #248178;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    border-radius: 42px;
+    right: 20%;
+
+}
+
+.span2{
+    font-size: 100px;
+    padding-left: 15%;
+
+}
+
+/* --------------------BOTAO CONHECER-----------------------------*/
+
+.dividir-pg3{
+    background-color: #FD6158;
+    width: 100%;
+    height: 2%;
+    position: absolute;
+}
+
+.moldura2{
+    display: flex;
+    background-color: #FD6158;
+    position: absolute;
+    border-radius: 62px;
+    width: 15%;
+    height: 10%;
+    right: 45%;
+    top: 185vi;
+    z-index: 1;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.textobotao2{
+    display: flex;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    right: 47%;
+    top: 186vi;
+
+    z-index: 2;
+
+}
+
+.bt2{
+    color: white;
+}
+
+/*     -------------        PARTE 3     -------------        */
+
+.img3{
+    display: flex;
+    margin-right: 100px;
+}
+
+/*             -----------                */
+
+.parte-3 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("../imagens/pg4img.jpg") 50% / cover no-repeat;
+    display: flex;
+    padding: 260px 167px 307px 105px;
+    box-sizing: border-box;
+    position: relative;
+    height: 100vh;
+  }
+
+  .parte-3 .text3 {
+    align-items: center;
+    font-family: 'Londrina Solid';
+    font-size: 40px;
+    color: #ffffff;
+    padding: 10px;
+    position: relative;
+    z-index: 3;
+    left: 2%;
+    width: 60%;
+ 
+    
+  }
+
+ .shape3{
+    background-color: #248178;
+    width: 60%;
+    height: 80%;
+    position: absolute;
+    border-radius: 42px;
+    right: 20%;
+
+}
+
+.span3{
+    font-size: 100px;
+    padding-left: 25%;
+
+}
+
+/* --------------------BOTAO CONHECER-----------------------------*/
+
+.dividir-pg3{
+    background-color: #FD6158;
+    width: 100%;
+    height: 2%;
+    position: absolute;
+}
+
+.moldura3{
+    display: flex;
+    background-color: #FD6158;
+    position: absolute;
+    border-radius: 62px;
+    width: 15%;
+    height: 10%;
+    right: 45%;
+    top: 256vi;
+    z-index: 1;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.textobotao3{
+    display: flex;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    right: 47%;
+    top: 257vi;
+    z-index: 2;
+
+}
+
+.bt3{
+    color: white;
+}
+
+
+
+/*              -------FOOTER------        */
+
+.wav{
+    position: relative;
+    top:110px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 1;
+    }
+    
+    .parte-4 {
+        border-radius: 0 0 10px 10px;
+        background: #FB5248;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 0 0 50px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 5%;
+        z-index: 3;
+      }
+      .parte-4 .icone {
+        background: url("../imagens/ICON.png") 50% / cover no-repeat;
+        width: 63px;
+        height: 45px;
+        margin-left: 180px;
+    
+      }
+      .parte-4 .rodapetexto {
+        margin-bottom: 15px;
+        display: inline-block;
+        overflow-wrap: break-word;
+        font-family: 'Londrina Solid';
+        font-size: 30px;
+        color: #FFFFFF;
+      }
+      .parte-4 .rodapetexto2 {
+        margin: 5px 17px 10px 0;
+        display: inline-block;
+        overflow-wrap: break-word;
+        font-family: 'Londrina Solid';
+        font-size: 30px;
+        color: #FFFFFF;
+      }
+     
+    
+    

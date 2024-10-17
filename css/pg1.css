@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Londrina Solid", sans-serif;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+/*---------COMEÇO HEADER----------*/
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header{
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    padding: 80px 4%;
+    transition: 1s;
+    z-index: 6;
+}
+
+header.rolagem{
+    background-color: rgb(0, 0, 0);
+    padding: 10px 4%;
+
+}
+
+header.rolagem a{
+    color: #FD6158;
+
+}
+
+header ul{
+    list-style-type: none;
+
+}
+header ul li{
+    display: inline-block;
+    margin: 0 50px ;
+    position: relative;
+}
+header ul li a{
+    color:#FD6158;
+    text-decoration: none;
+
+}
+a{
+    text-decoration: none;
+}
+
+.banner{
+    display: flex;
+   background-image: url("../imagens/pg1banner.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height:105vi;
+}
+
+ul li::after{
+    content:" ";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+ul li:hover::after{
+    width: 100%;
+}
+  
+.re{
+    font-size: 50px;
+}
+
+.re::after{
+    top: 55px;
+}
+
+/*----------FIM HEADER----------*/
+
+
+/*---------COMEÇO MAIN---------*/
+.parte-1 {
+    background: url("../imagens/pg1banner2.jpg") 50% / cover no-repeat;
+    display: flex;
+    padding: 300px;
+    box-sizing: border-box;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .parte-1 .text{
+    font-family: 'Londrina Solid';
+    font-size: 40px;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+    right: 20%;
+
+  }
+
+  .parte-1 .h1text{
+    font-family: 'Londrina Solid';
+    font-size: 60px;
+    color:#FD6158 ;
+    position: relative;
+    z-index: 3;
+    bottom: 100px;
+    width: 1920px;
+    left: 30%;
+  }
+
+ .shape1{
+    background-color: #24817863;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+ }
+
+ #separar{
+  text-align: center;
+  background-color: #fd6058;
+  color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.SAU{
+  font-family: 'Londrina Solid';
+}
+  /* FIM 1 PARTE */
+
+.participantes{
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 0 20px 0;
+  box-sizing: border-box;
+}
+.participantes .nome3{
+  overflow-wrap: break-word;
+  font-family: 'Londrina Solid';
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+}
+
+.participantes .nome2{
+  overflow-wrap: break-word;
+  font-family: 'Londrina Solid';
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+  padding-right: 25px;
+}
+
+.participantes .nome1{
+  margin-right: 17.5px;
+  width: 354px;
+  overflow-wrap: break-word;
+  font-family: 'Londrina Solid';
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+}
+
+.participantes .icon1 {
+  background: url("../imagens/icon.jpg") 50% / cover no-repeat;
+  width: 107px;
+  height: 107px;
+}
+
+.participantes .icon2{
+  background: url("../imagens/icon.jpg") 50% / cover no-repeat;
+  width: 107px;
+  height: 107px;
+}
+
+.participantes .icon3{
+  background: url("../imagens/icon.jpg") 50% / cover no-repeat;
+  width: 107px;
+  height: 107px;
+}
+
+.participantes .container2{
+  margin: 0 78px 15px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 795px;
+  box-sizing: border-box;
+}
+
+.participantes .nomes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1100px;
+  box-sizing: border-box;
+}
+
+/* FIM PARTE 2 */
+
+.objetivo {
+  background: #24817863;
+  display: flex;
+  padding: 32px 172.4px 1px 141.6px;
+  width: 100%;
+  height: 500px;
+  box-sizing: border-box;
+}
+
+.objetivo .missao{
+  margin-top: 5%;
+  display: inline-block;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Londrina Solid';
+  font-size: 40px;
+  color: #FFFFFF;
+  left: 20%;
+  position: relative;
+}
+
+.objetivo .s-visao {
+  position: relative;
+  right: 15%;
+  overflow-wrap: break-word;
+  font-family: 'Londrina Solid';
+  font-size: 65px;
+  color: #FD6158;
+  z-index: 2;
+  width: 10%;
+}
+
+.objetivo .line {
+  background: #000000;
+  margin: 100px;
+  width: 1px;
+  height: 50%;
+  left: 17%;
+  position: relative;
+}
+
+.objetivo .visao {
+  margin-top: 5%;
+  display: inline-block;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Londrina Solid';
+  font-size: 40px;
+  color: #FFFFFF;
+  position: relative;
+  left: 10%;
+
+}
+
+.objetivo .s-missao {
+  position: relative;
+  font-family: 'Londrina Solid';
+  font-size: 65px;
+  color: #FD6158;
+  width: 10%;
+  right: 63%;
+
+}
+
+.objetivo .container3 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+/* fim parte 3 */
+
+.participantes2{
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 0 0;
+  box-sizing: border-box;
+}
+.participantes2 .nome6{
+  overflow-wrap: break-word;
+  font-family: 'Londrina Solid';
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+  padding-right: 30px;
+}
+
+.participantes2 .nome5{
+  overflow-wrap: break-word;
+  font-family: 'Londrina Solid';
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+  right: 650px;
+  padding-right: 100px;
+}
+
+.participantes2 .nome4{
+  margin-right: 15px;
+  width: 354px;
+  overflow-wrap: break-word;
+  font-family: 'Londrina Solid';
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+  right: 50px;
+}
+
+.participantes2 .icon4 {
+  background: url("../imagens/icon.jpg") 50% / cover no-repeat;
+  width: 107px;
+  height: 107px;
+}
+
+.participantes2 .icon5{
+  background: url("../imagens/icon.jpg") 50% / cover no-repeat;
+  width: 107px;
+  height: 107px;
+}
+
+.participantes2 .icon6{
+  background: url("../imagens/icon.jpg") 50% / cover no-repeat;
+  width: 107px;
+  height: 107px;
+}
+
+.participantes2 .container4{
+  margin: 0 7px 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 795px;
+  box-sizing: border-box;
+}
+
+.participantes2 .nomes2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1000px;
+  box-sizing: border-box;
+}
+
+
+/* FIM PARTE 4 */
+
+.bo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #248178;
+}
+
+.fale-conosco{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+  padding: 10px 45px;
+  background: #d6d6d6;
+  border-radius: 30px;
+  width: 1200px;
+  height: 650px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.fale-conosco .title{
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+  margin: 1em;
+  display: flex;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+form label{
+  color: black;
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+form input{
+  padding: 15px;
+  outline: none;
+  border: 0;
+  margin-bottom: 20px;
+  font-size: 15px;
+  transition: all 0.5s;
+  border-radius: 6px;
+}
+
+form input:focus{
+  border-radius: 20px;
+}
+
+form textarea{
+  padding: 10px;
+  outline: none;
+  border: 0;
+  font-size: 15px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  transition: all 0.5s;
+
+}
+
+form textarea:focus{
+  border-radius: 30px;
+}
+
+form button{
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid #d6d6d6 ;
+  transition: all 1s;
+  border-radius: 30px;
+  width: 20%;
+  margin-left: 40%;
+
+
+
+}
+
+/*     --------------------------------     */
+
+
+.parte-4 {
+  border-radius: 0 0 10px 10px;
+  background: #FB5248;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0 0 50px;
+  box-sizing: border-box;
+}
+.parte-4 .icone {
+  background: url("../imagens/ICON.png") 50% / cover no-repeat;
+  width: 63px;
+  height: 45px;
+  margin-left: 180px;
+
+}
+.parte-4 .rodapetexto {
+  margin-bottom: 15px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Londrina Solid';
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.parte-4 .rodapetexto2 {
+  margin: 5px 17px 10px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Londrina Solid';
+  font-size: 30px;
+  color: #FFFFFF;
+}

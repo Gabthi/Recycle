@@ -1,0 +1,307 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Londrina Solid", sans-serif;
+font-weight: 900;
+font-style: normal;
+letter-spacing: 1px;
+}
+
+html{
+  height: 100vh;
+}
+/*---------COMEÇO HEADER----------*/
+.container{
+  max-width: 1280px;
+  margin: auto;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header{
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  padding: 80px 4%;
+  transition: 1s;
+  z-index: 5;
+}
+
+header.rolagem{
+  background-color: rgb(0, 0, 0);
+  padding: 10px 4%;
+
+}
+
+header.rolagem a{
+  color: #FD6158;
+
+}
+
+header ul{
+  list-style-type: none;
+
+}
+header ul li{
+  display: inline-block;
+  margin: 0 50px ;
+  position: relative;
+}
+header ul li a{
+  color:#FD6158;
+  text-decoration: none;
+
+}
+a{
+  text-decoration: none;
+}
+
+ul li::after{
+  content:" ";
+  width: 0%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 20px;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+ul li:hover::after{
+  width: 100%;
+}
+
+.re{
+  font-size: 50px;
+}
+
+.re::after{
+  top: 55px;
+}
+ /* fim barra de tarefa */ 
+
+ .reciclagem {
+  background: url("../imagens/pg2banne.jpg") 80% / cover no-repeat;
+  padding: 403px 0.5px 374.4px 0;
+  height: 70vi;
+  background-attachment: fixed;
+}
+.reciclagem .reciclagem-1 {
+  font-family: 'Londrina Solid';
+  font-size: 128px;
+  color: #FD6158;
+  text-align: center;
+}
+
+
+/* fim visu1 */
+
+.parte-1 {
+  background: url("../imagens/pg2banner3.jpg") 50% / cover no-repeat;
+  display: flex;
+  padding: 260px 167px 307px 105px;
+  box-sizing: border-box;
+  background-attachment: fixed;
+  position: relative;
+}
+
+
+.parte-1 .miniatura1 {
+  position: relative;
+  box-shadow: 35px 29px 15px 0px rgba(0, 0, 0, 0.8);
+  border-radius: 55px 0 0 51px;
+  background: url("../imagens/pg2miniatura4.jpg") 50% / cover no-repeat;
+  width: 50%;
+  height: 30vi; 
+  z-index: 2; 
+  top: 150px;
+  
+}
+
+
+.parte-1 .text {
+  font-family: 'Londrina Solid';
+  font-size: 40px;
+  color: #ffffff;
+  padding: 10px;
+  position: relative;
+  z-index: 3;
+  left: 20px;
+
+  
+}
+
+.shape{
+  background-color: #248178cc;
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  border-radius: 42px;
+  right:150px;
+  bottom: 30%;
+
+}
+
+/* FIM PARTE 1 */
+
+
+.dividir-pg{
+  background-color: #FD6158;
+  width: 100%;
+  height: 3%;
+  position: absolute;
+
+}
+
+/* inicio PARTE 2*/
+
+.parte-2 {
+  background: url("../imagens/pg2miniatura3.jpg") 50% / cover no-repeat;
+  display: flex;
+  padding: 260px 167px 307px 95px;
+  box-sizing: border-box;
+  background-attachment: fixed;
+}
+
+
+
+.parte-2 .miniatura2 {
+  position: relative;
+  box-shadow: 35px 29px 15px 0px rgba(0, 0, 0, 0.8);
+  border-radius: 0 55px 51px 0;
+  background: url("../imagens/pg2miniatura.jpg") 50% / cover no-repeat;
+  width: 100%; 
+  z-index: 2; 
+  left: 55%;
+  top: 170px;
+}
+
+
+.parte-2 .text {
+  font-family: 'Londrina Solid';
+  font-size: 40px;
+  color: #ffffff;
+  padding: 10px;
+  position: relative;
+  z-index: 3;
+  text-align: right;
+  right: 45%;
+  width: 200%;
+  
+}
+
+.shape2 {
+  background-color: #248178cc;
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  border-radius: 42px;
+  bottom: 20%;
+
+}
+
+.parte-2{
+  position: relative;
+
+}
+
+.dividir-pg2{
+  background-color: #FD6158;
+  width: 100%;
+  height: 3%;
+  position: absolute;
+}
+
+
+/* INICIO PARTE 3 */
+
+.parte-3 {
+  background: url("../imagens/pg2banner.jpg") 50% / cover no-repeat;
+  display: flex;
+  padding: 130px 167px 300px 95px;
+  box-sizing: border-box;
+  background-attachment: fixed;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.parte-3 .text{
+  font-family: 'Londrina Solid';
+  font-size: 40px;
+  color: #ffffff;
+  padding: 10px;
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  width: 100%;
+  bottom: 50%;
+}
+
+.lipg3{
+  position: relative;
+  color: white;
+  z-index: 6;
+  font-size: 30px;
+  width: 60%;
+  left: 20%;
+  z-index: 1;
+}
+
+.shape3{
+  background-color: #248178cc;
+  width: 60%;
+  height: 80%;
+  position: absolute;
+  border-radius: 42px;
+}
+
+.imgparte3{
+box-shadow: 36px 30px 0px 9px rgba(0, 0, 0, 0.5);
+border-radius: 40px;
+background: url("../imagens/pg2miniatura2.webp") 50% / cover no-repeat;
+position: relative;
+width: 600px;
+height: 600px;
+}
+
+/*          --------------          */
+
+
+.parte-4 {
+  border-radius: 0 0 10px 10px;
+  background: #FB5248;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0 0 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.parte-4 .icone {
+  background: url("../imagens/ICON.png") 50% / cover no-repeat;
+  width: 63px;
+  height: 45px;
+  margin-left: 180px;
+
+}
+.parte-4 .rodapetexto {
+  margin-bottom: 15px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Londrina Solid';
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.parte-4 .rodapetexto2 {
+  margin: 5px 17px 10px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Londrina Solid';
+  font-size: 30px;
+  color: #FFFFFF;
+}
